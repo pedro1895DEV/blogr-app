@@ -1,0 +1,97 @@
+header {
+    background-color: #fd6a64;
+    background-image: url('/bg-pattern-intro-desktop.svg'), linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    background-position: 15% 52%;
+    background-repeat: no-repeat;
+    background-size: action;
+    color: white;
+    height: 60vh;
+    border-bottom-left-radius: 80px 80px;
+}
+
+.navbar {
+    align-items: center;
+    display: flex;
+    padding: 4% 10%;
+}
+
+.navbar-actions {
+    margin-left: auto;
+}
+
+.navbar img {
+    margin-right: 20px;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-family: Overpass;
+}
+
+.navbar-actions button {
+    margin: 0 5px;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    color:#fd6a64;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+#login-button {
+    background-color:#fd6a64;
+    color: white;
+}
+
+.title h1 {
+    font-family: Overpass;
+    font-size: 48px;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+.title p {
+    font-family: Overpass;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 8%;
+}
+
+.title {
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title .buttons {
+    display: flex;
+    font-family: Ubuntu;
+    gap: 15px;
+    justify-content: center;
+    margin: auto;
+}
+
+.title .buttons button {
+    border-color: white;
+    border-style: solid;
+    border-width: 1.2px;
+    background-color: white;
+    border-radius: 20px;
+    color:#fd6a64;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+#learn-button {
+    background-color:#fd6a64;
+    color: white;
+}
