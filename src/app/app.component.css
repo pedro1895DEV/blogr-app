@@ -47,6 +47,16 @@ header {
     color: white;
 }
 
+#login-button:hover {
+    background-color: white;
+    color:#fd6a64 ;
+}
+
+#signup-button:hover {
+    background-color: hsl(355, 100%, 74%);
+    color:aliceblue;
+}
+
 .title h1 {
     font-family: Overpass;
     font-size: 48px;
@@ -94,4 +104,67 @@ header {
 #learn-button {
     background-color:#fd6a64;
     color: white;
+}
+
+#learn-button:hover {
+    background-color: white;
+    color: #fd6a64;
+}
+
+#start-button:hover {
+    background-color: #f0afad;;
+    color: white;
+    border: none;
+}
+
+footer {
+    background-color: hsl(240, 10%, 16%);
+    border-top-right-radius: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 4% 10%;
+}
+
+footer h1 {
+    color: white;
+    font-family: Overpass;
+    font-size: 3rem;
+    margin-bottom: 20px; 
+    flex: 1;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex: 3;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer h4 {
+    color: white;
+    font-family: Overpass;
+    margin-bottom: 2rem;
+}
+
+footer li {
+    color: hsl(240, 2%, 79%);
+    font-family: Overpass;
+    margin: 1rem 0; 
+}
+
+footer li a {
+    color: hsl(240, 2%, 79%);
+    text-decoration: none; 
+    font-family: Overpass;
+}
+
+footer li a:hover {
+    text-decoration: underline;
+    color: hsl(240, 2%, 79%);
 }

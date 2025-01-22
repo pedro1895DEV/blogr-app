@@ -107,3 +107,54 @@
     text-align: start;
 }
 
+.desktop-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%;
+    gap: 5%;
+    flex-direction: row-reverse;
+}
+
+.desktop-info > div:first-child {
+    flex: 1;
+    padding-left: 5%;
+    text-align: left;
+    max-width: 80%;
+}
+
+.desktop-info > div:last-child {
+    flex: 1;
+    text-align: center;
+}
+
+.desktop-info h3 {
+    font-family: Overpass;
+    font-size: 24px;
+    font-weight: 600;
+    color: hsl(208, 49%, 24%);
+    margin-bottom: 15px;
+}
+
+.desktop-info p {
+    font-family: Overpass;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0;
+    margin-bottom: 4rem;
+    max-width: 100%;
+}
+
+.illustration-laptop-desktop {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.illustration-laptop-desktop img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-left: -80%;
+}
+
