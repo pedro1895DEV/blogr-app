@@ -16,18 +16,94 @@
   
 .paragraph {
     float: left;
-    width: 60%;
-    margin: 0 20px 0 0;
-}
-  
-.illustration-editor-desktop {
-    float: left;
     width: 35%;
+    margin-left: 5%;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
-  
+
+.paragraph h3 {
+    font-family: Overpass;
+    font-size: 24px;
+    font-weight: 600;
+    color: hsl(208, 49%, 24%);
+    text-align: left;
+    margin: 0;
+}
+
+.paragraph p {
+    font-family: Overpass;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0;
+    text-align: left;
+    word-wrap: break-word;
+    margin-bottom: 10%;
+    color:hsl(207, 13%, 34%);
+}
+
+.illustration-editor-desktop {
+    float: right;
+    width: 45%;
+    margin-right: -12%;
+    margin-top: -10%;
+}
+
 .illustration-editor-desktop img {
     width: 100%;
     height: auto;
-    object-position: 95% 5%;
+    object-fit: cover;
 }
-  
+
+.state-of-the-art {
+    align-items: center;
+    background: url('/bg-pattern-circles.svg'), linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    background-position: -25% 85%;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 95px 95px;
+    border-top-right-radius: 95px 95px;
+    color: white;
+    display: flex;
+    height: 17rem;
+    justify-content: space-between;
+    padding: 40px 5%;
+}
+
+.state-of-the-art > div:first-child {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.state-of-the-art > div:last-child {
+    flex: 1;
+    padding-left: 5%;
+    text-align: left;
+    flex-direction: column;
+    gap: 10px; 
+}
+
+.state-of-the-art h2 {
+    font-family: Overpass;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.state-of-the-art img {
+    height: auto;
+    max-width: 80%;
+    object-fit: contain;
+}
+
+.state-of-the-art p {
+    font-family: Overpass;
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 0;
+    max-width: 60%;
+    text-align: start;
+}
+
