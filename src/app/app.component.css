@@ -30,6 +30,69 @@ header {
     font-family: Overpass;
 }
 
+.dropbtn {
+    background-color: transparent;
+    color: hsl(0, 0%, 100%);
+    border: none;
+    cursor: pointer;
+    font-family: Overpass;
+    font-weight: 500;
+    padding: 10px 0;
+    text-align: left;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dropbtn:hover {
+    text-decoration: underline;
+}
+
+.dropbtn .fa-caret-down {
+    color: white;
+    text-decoration: none; 
+    transition: transform 0.3s; 
+}
+
+.fa-caret-down {
+    text-decoration: none;
+}
+
+.dropbtn.active .fa-caret-down {
+    transform: rotate(180deg);
+}
+
+.dropdown-content a {
+    display: block;
+    border: none;
+    color: hsl(240, 10%, 26%);
+    font-family: Overpass;
+    padding: 10px 16px;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.dropdown-content a:hover {
+    font-weight: 900;
+    color: rgb(19, 18, 18);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    min-width: 160px;
+    z-index: 1;
+    padding: 10px;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
 .navbar-actions button {
     margin: 0 5px;
     background-color: white;

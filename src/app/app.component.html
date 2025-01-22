@@ -3,9 +3,39 @@
   <nav class="navbar">
     <img src="logo.svg" alt="logo-title">
     <ul class="navbar-links">
-      <li><a routerLink="/"></a>Products</li>
-      <li><a routerLink="/"></a>Company</li>
-      <li><a routerLink="/"></a>Connect</li>
+      <li class="dropdown">
+        <button class="dropbtn" id="b1" (click)="toggleDropdown('products')">Products
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" [class.show]="activeDropdown === 'products'">
+          <a href="#">Overview</a>
+          <a href="#">Pricing</a>
+          <a href="#">Marketplace</a>
+          <a href="#">Features</a>
+          <a href="#">Integrations</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <button class="dropbtn" id="b2" (click)="toggleDropdown('company')">Company
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" [class.show]="activeDropdown === 'company'">
+          <a href="#">About</a>
+          <a href="#">Team</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <button class="dropbtn" id="b3" (click)="toggleDropdown('connect')">Connect
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" [class.show]="activeDropdown === 'connect'">
+          <a href="#">Contact</a>
+          <a href="#">Newsletter</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </li>
     </ul>
     <div class="navbar-actions">
       <button id ="login-button">Login</button>
